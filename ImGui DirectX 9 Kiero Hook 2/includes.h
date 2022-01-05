@@ -1,3 +1,5 @@
+// Copyright [2021] <tiansongyu>
+
 #pragma once
 #include <Windows.h>
 #include <d3d9.h>
@@ -14,5 +16,5 @@
 #include "Util.h"
 
 #define WINDOW_NAME "Dear ImGui DirectX9 Example"
-typedef long(__stdcall* EndScene)(LPDIRECT3DDEVICE9);
+typedef int64_t(__stdcall* EndScene)(LPDIRECT3DDEVICE9);
 typedef LRESULT(CALLBACK* WNDPROC)(HWND, UINT, WPARAM, LPARAM);
